@@ -1,4 +1,4 @@
-echo "Adding lncm to DOCKER group"
+echo "Adding user to DOCKER group"
 echo "Also fixing permissions on folders"
 on_chroot << EOF
 usermod -a -G docker $FIRST_USER_NAME
