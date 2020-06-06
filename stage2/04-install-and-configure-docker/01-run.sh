@@ -6,11 +6,3 @@ apt-key fingerprint 0EBFCD88
 
 echo "Add Bazel APT repository key"
 curl https://bazel.build/bazel-release.pub.gpg | apt-key add -
-
-echo "Set up the stable repository to download Docker"
-add-apt-repository \
-   "deb [arch=armhf] https://download.docker.com/linux/debian \
-   buster \
-   stable"
-
-apt-get update
