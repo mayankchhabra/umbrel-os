@@ -29,3 +29,4 @@ ntfs-3g
 pciutils
 rpi-eeprom
 vim
+apt-transport-https gnupg-agent software-properties-common
