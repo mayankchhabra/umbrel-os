@@ -1,7 +1,12 @@
 #!/bin/bash -e
+echo "Updating CA certs"
+on_chroot << EOF
+update-ca-certificates
+EOF
+
 echo "Installing Docker"
 on_chroot << EOF
-curl -fsSL -k https://get.docker.com -o get-docker.sh
+curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 EOF
 
