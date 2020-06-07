@@ -1,11 +1,7 @@
 #!/bin/bash -e
 echo "Installing Docker"
 on_chroot << EOF
-if ! docker -v
-then
-	
-	curl -SsL https://get.docker.com | sh
-fi
+curl -SsL https://get.docker.com | sh
 EOF
 
 echo "Adding user to the 'docker' group"
