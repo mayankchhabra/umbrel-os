@@ -13,7 +13,7 @@ jobs:
         - name: Install Dependencies
           run: sudo apt-get -y install quilt qemu-user-static debootstrap bsdtar
         - name: Run Build script
-          run: sudo ./build.sh
+          run: sudo ./build-docker.sh
         - name: Copy ZIP to current working dir
           run: cp deploy/*.zip ./
         - name: Debug current working dir
