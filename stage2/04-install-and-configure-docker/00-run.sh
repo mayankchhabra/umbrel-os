@@ -1,6 +1,7 @@
 #!/bin/bash -e
 echo "Installing Docker"
 on_chroot << EOF
+export CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 curl -fsSL https://get.docker.com | sh
 EOF
 
