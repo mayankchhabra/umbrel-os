@@ -1,13 +1,9 @@
 #!/bin/bash -e
-echo "Docker Version:"
-on_chroot << EOF
-docker -v
-EOF
-
+echo "Installing Docker"
 on_chroot << EOF
 if ! docker -v
 then
-	echo 'Installing Docker'
+	
 	curl -SsL https://get.docker.com | sh
 fi
 EOF
