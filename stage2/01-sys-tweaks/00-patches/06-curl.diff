@@ -1,0 +1,10 @@
+Index: jessie-stage2/rootfs/etc/profile
+===================================================================
+--- jessie-stage2.orig/rootfs/etc/profile
++++ jessie-stage2/rootfs/etc/profile
+@@ -32,3 +32,5 @@
+   done
+   unset i
+ fi
++
++export CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
